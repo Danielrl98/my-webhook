@@ -6,7 +6,6 @@ const router = express.Router()
 
 router.post('/request', async (req, res, next) => {
     const body = req.body
-
     const result = await new RequestWebhookController().create(JSON.stringify(body))
 
     res.send(result)
