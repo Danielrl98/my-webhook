@@ -10,6 +10,7 @@ export class RequestWebhookResponse {
     async find(query: any) {
         if(!query.page) throw new Error('page is required')
         if(!query.pageSize) throw new Error('pageSize is required')
+            
         const result = await this.responseWebhookServices.find(query.page, query.pageSize)
         const count = await this.responseWebhookServices.count()
 

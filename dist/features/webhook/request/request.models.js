@@ -2,10 +2,11 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const prisma_1 = require("../../../shared/config/prisma");
 class RequestWebhookModels {
-    async create(value, responseType) {
+    async create(value, responseType, requestId) {
         const result = await prisma_1.prisma.data.create({
             data: {
-                responseType: responseType,
+                requestId,
+                responseType,
                 data: value
             }
         });

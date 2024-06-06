@@ -1,10 +1,11 @@
 import  { prisma } from '../../../shared/config/prisma'
 
 export default class RequestWebhookModels {
-    async create(value: string,responseType: string){
+    async create(value: string,responseType: string, requestId: string){
         const result = await prisma.data.create({
             data: {
-                responseType: responseType,
+                requestId,
+                responseType,
                 data: value
             }
         })
