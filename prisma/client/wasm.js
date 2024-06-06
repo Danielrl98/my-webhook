@@ -114,6 +114,7 @@ Prisma.NullTypes = {
 
 exports.Prisma.DataScalarFieldEnum = {
   id: 'id',
+  responseType: 'responseType',
   data: 'data',
   createdAt: 'createdAt',
   updatedAt: 'updatedAt'

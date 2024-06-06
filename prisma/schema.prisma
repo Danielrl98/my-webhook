@@ -18,6 +18,7 @@ datasource db {
 
 model Data {
    id          String @id @default(auto()) @map("_id") @db.ObjectId
+   responseType String?
    data String
    createdAt DateTime @default(now())
    updatedAt DateTime @updatedAt
