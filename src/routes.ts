@@ -13,9 +13,18 @@ router.post('/request', async (req, res, next) => {
     next()
 }) 
 router.get('/response', async (req, res, next) => {
-    const result = await new RequestWebhookResponse().find()
+    
+    try {
+        const result = await new RequestWebhookResponse().find(req.query)
 
-    return res.send(result)
+        res.status(200).json(result)
+    } catch (error) {
+        const {message} = error as {message: string}
+        res.status(400).json({
+            err: message
+        })
+    }
+    next()
 }) 
 
 router.get('/', async (req, res, next) => {
