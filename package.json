@@ -4,9 +4,9 @@
   "main": "build/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tsx src/server.ts",
+    "dev": "tsx src/index.ts",
     "build2": "rm -rf build && tsc",
-    "start2": "node build/server.js"
+    "start": "node build/index.js"
   },
   "author": "",
   "license": "ISC",
