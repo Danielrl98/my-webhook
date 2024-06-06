@@ -11,10 +11,10 @@ app.use(cors())
 app.use(express.urlencoded({ extended: true}))
 app.use(express.json())
 
-app.engine('.hbs',hbs.engine)
+/*app.engine('.hbs',hbs.engine)
 app.set('view engine','.hbs')
-app.set("views", __dirname + "/views/")
-app.use('/webhook',router)
+app.set("views", __dirname + "/views/")*/
+app.use('/',router)
 
 
 const PORT = 8000
