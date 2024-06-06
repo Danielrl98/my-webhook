@@ -18,5 +18,5 @@ app.use('/', routes_1.default);
 const PORT = 8000;
 //const HOSTNAME = env.HOSTNAME
 app.listen(PORT, () => {
-    //console.log(`http://${HOSTNAME}:${PORT}`)
+    console.log(`http://localhost:${PORT}`);
 });
