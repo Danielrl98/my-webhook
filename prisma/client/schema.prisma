@@ -15,10 +15,11 @@ datasource db {
 }
 
 model Data {
-  id           String   @id @default(auto()) @map("_id") @db.ObjectId
-  responseType String?
-  requestId    String?
-  data         String
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
+  id            String   @id @default(auto()) @map("_id") @db.ObjectId
+  responseType  String?
+  requestId     String?
+  referenceType String?
+  data          String
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
 }

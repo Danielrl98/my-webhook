@@ -851,6 +851,7 @@ export namespace Prisma {
     id: string | null
     responseType: string | null
     requestId: string | null
+    referenceType: string | null
     data: string | null
     createdAt: Date | null
     updatedAt: Date | null
@@ -860,6 +861,7 @@ export namespace Prisma {
     id: string | null
     responseType: string | null
     requestId: string | null
+    referenceType: string | null
     data: string | null
     createdAt: Date | null
     updatedAt: Date | null
@@ -869,6 +871,7 @@ export namespace Prisma {
     id: number
     responseType: number
     requestId: number
+    referenceType: number
     data: number
     createdAt: number
     updatedAt: number
@@ -880,6 +883,7 @@ export namespace Prisma {
     id?: true
     responseType?: true
     requestId?: true
+    referenceType?: true
     data?: true
     createdAt?: true
     updatedAt?: true
@@ -889,6 +893,7 @@ export namespace Prisma {
     id?: true
     responseType?: true
     requestId?: true
+    referenceType?: true
     data?: true
     createdAt?: true
     updatedAt?: true
@@ -898,6 +903,7 @@ export namespace Prisma {
     id?: true
     responseType?: true
     requestId?: true
+    referenceType?: true
     data?: true
     createdAt?: true
     updatedAt?: true
@@ -980,6 +986,7 @@ export namespace Prisma {
     id: string
     responseType: string | null
     requestId: string | null
+    referenceType: string | null
     data: string
     createdAt: Date
     updatedAt: Date
@@ -1006,6 +1013,7 @@ export namespace Prisma {
     id?: boolean
     responseType?: boolean
     requestId?: boolean
+    referenceType?: boolean
     data?: boolean
     createdAt?: boolean
     updatedAt?: boolean
@@ -1016,6 +1024,7 @@ export namespace Prisma {
     id?: boolean
     responseType?: boolean
     requestId?: boolean
+    referenceType?: boolean
     data?: boolean
     createdAt?: boolean
     updatedAt?: boolean
@@ -1029,6 +1038,7 @@ export namespace Prisma {
       id: string
       responseType: string | null
       requestId: string | null
+      referenceType: string | null
       data: string
       createdAt: Date
       updatedAt: Date
@@ -1455,6 +1465,7 @@ export namespace Prisma {
     readonly id: FieldRef<"Data", 'String'>
     readonly responseType: FieldRef<"Data", 'String'>
     readonly requestId: FieldRef<"Data", 'String'>
+    readonly referenceType: FieldRef<"Data", 'String'>
     readonly data: FieldRef<"Data", 'String'>
     readonly createdAt: FieldRef<"Data", 'DateTime'>
     readonly updatedAt: FieldRef<"Data", 'DateTime'>
@@ -1766,6 +1777,7 @@ export namespace Prisma {
     id: 'id',
     responseType: 'responseType',
     requestId: 'requestId',
+    referenceType: 'referenceType',
     data: 'data',
     createdAt: 'createdAt',
     updatedAt: 'updatedAt'
@@ -1847,6 +1859,7 @@ export namespace Prisma {
     id?: StringFilter<"Data"> | string
     responseType?: StringNullableFilter<"Data"> | string | null
     requestId?: StringNullableFilter<"Data"> | string | null
+    referenceType?: StringNullableFilter<"Data"> | string | null
     data?: StringFilter<"Data"> | string
     createdAt?: DateTimeFilter<"Data"> | Date | string
     updatedAt?: DateTimeFilter<"Data"> | Date | string
@@ -1856,6 +1869,7 @@ export namespace Prisma {
     id?: SortOrder
     responseType?: SortOrder
     requestId?: SortOrder
+    referenceType?: SortOrder
     data?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
@@ -1868,6 +1882,7 @@ export namespace Prisma {
     NOT?: DataWhereInput | DataWhereInput[]
     responseType?: StringNullableFilter<"Data"> | string | null
     requestId?: StringNullableFilter<"Data"> | string | null
+    referenceType?: StringNullableFilter<"Data"> | string | null
     data?: StringFilter<"Data"> | string
     createdAt?: DateTimeFilter<"Data"> | Date | string
     updatedAt?: DateTimeFilter<"Data"> | Date | string
@@ -1877,6 +1892,7 @@ export namespace Prisma {
     id?: SortOrder
     responseType?: SortOrder
     requestId?: SortOrder
+    referenceType?: SortOrder
     data?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
@@ -1892,6 +1908,7 @@ export namespace Prisma {
     id?: StringWithAggregatesFilter<"Data"> | string
     responseType?: StringNullableWithAggregatesFilter<"Data"> | string | null
     requestId?: StringNullableWithAggregatesFilter<"Data"> | string | null
+    referenceType?: StringNullableWithAggregatesFilter<"Data"> | string | null
     data?: StringWithAggregatesFilter<"Data"> | string
     createdAt?: DateTimeWithAggregatesFilter<"Data"> | Date | string
     updatedAt?: DateTimeWithAggregatesFilter<"Data"> | Date | string
@@ -1901,6 +1918,7 @@ export namespace Prisma {
     id?: string
     responseType?: string | null
     requestId?: string | null
+    referenceType?: string | null
     data: string
     createdAt?: Date | string
     updatedAt?: Date | string
@@ -1910,6 +1928,7 @@ export namespace Prisma {
     id?: string
     responseType?: string | null
     requestId?: string | null
+    referenceType?: string | null
     data: string
     createdAt?: Date | string
     updatedAt?: Date | string
@@ -1918,6 +1937,7 @@ export namespace Prisma {
   export type DataUpdateInput = {
     responseType?: NullableStringFieldUpdateOperationsInput | string | null
     requestId?: NullableStringFieldUpdateOperationsInput | string | null
+    referenceType?: NullableStringFieldUpdateOperationsInput | string | null
     data?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
@@ -1926,6 +1946,7 @@ export namespace Prisma {
   export type DataUncheckedUpdateInput = {
     responseType?: NullableStringFieldUpdateOperationsInput | string | null
     requestId?: NullableStringFieldUpdateOperationsInput | string | null
+    referenceType?: NullableStringFieldUpdateOperationsInput | string | null
     data?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
@@ -1935,6 +1956,7 @@ export namespace Prisma {
     id?: string
     responseType?: string | null
     requestId?: string | null
+    referenceType?: string | null
     data: string
     createdAt?: Date | string
     updatedAt?: Date | string
@@ -1943,6 +1965,7 @@ export namespace Prisma {
   export type DataUpdateManyMutationInput = {
     responseType?: NullableStringFieldUpdateOperationsInput | string | null
     requestId?: NullableStringFieldUpdateOperationsInput | string | null
+    referenceType?: NullableStringFieldUpdateOperationsInput | string | null
     data?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
@@ -1951,6 +1974,7 @@ export namespace Prisma {
   export type DataUncheckedUpdateManyInput = {
     responseType?: NullableStringFieldUpdateOperationsInput | string | null
     requestId?: NullableStringFieldUpdateOperationsInput | string | null
+    referenceType?: NullableStringFieldUpdateOperationsInput | string | null
     data?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
@@ -2002,6 +2026,7 @@ export namespace Prisma {
     id?: SortOrder
     responseType?: SortOrder
     requestId?: SortOrder
+    referenceType?: SortOrder
     data?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
@@ -2011,6 +2036,7 @@ export namespace Prisma {
     id?: SortOrder
     responseType?: SortOrder
     requestId?: SortOrder
+    referenceType?: SortOrder
     data?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
@@ -2020,6 +2046,7 @@ export namespace Prisma {
     id?: SortOrder
     responseType?: SortOrder
     requestId?: SortOrder
+    referenceType?: SortOrder
     data?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder

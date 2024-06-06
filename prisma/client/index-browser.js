@@ -116,6 +116,7 @@ exports.Prisma.DataScalarFieldEnum = {
   id: 'id',
   responseType: 'responseType',
   requestId: 'requestId',
+  referenceType: 'referenceType',
   data: 'data',
   createdAt: 'createdAt',
   updatedAt: 'updatedAt'
