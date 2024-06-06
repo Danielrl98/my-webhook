@@ -1,5 +1,6 @@
 interface CustomProcessEnv {
     HOSTNAME: string;
+    TESTE: string
    
   }
   

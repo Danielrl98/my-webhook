@@ -16,6 +16,7 @@ app.set('view engine','.hbs')
 app.set("views", __dirname + "/views/")*/
 app.use('/',router)
 
+console.log(env)
 
 const PORT = 8000
 

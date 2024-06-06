@@ -15,6 +15,6 @@ router.post('/request', async (req, res, next) => {
     next()
 }) */
 router.get('/', async (req, res, next) => {
-    res.send('hello world2');
+    res.send('hello world3');
 });
 exports.default = router;
