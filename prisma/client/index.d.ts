@@ -851,18 +851,21 @@ export namespace Prisma {
     id: string | null
     data: string | null
     createdAt: Date | null
+    updatedAt: Date | null
   }
 
   export type DataMaxAggregateOutputType = {
     id: string | null
     data: string | null
     createdAt: Date | null
+    updatedAt: Date | null
   }
 
   export type DataCountAggregateOutputType = {
     id: number
     data: number
     createdAt: number
+    updatedAt: number
     _all: number
   }
 
@@ -871,18 +874,21 @@ export namespace Prisma {
     id?: true
     data?: true
     createdAt?: true
+    updatedAt?: true
   }
 
   export type DataMaxAggregateInputType = {
     id?: true
     data?: true
     createdAt?: true
+    updatedAt?: true
   }
 
   export type DataCountAggregateInputType = {
     id?: true
     data?: true
     createdAt?: true
+    updatedAt?: true
     _all?: true
   }
 
@@ -962,6 +968,7 @@ export namespace Prisma {
     id: string
     data: string
     createdAt: Date
+    updatedAt: Date
     _count: DataCountAggregateOutputType | null
     _min: DataMinAggregateOutputType | null
     _max: DataMaxAggregateOutputType | null
@@ -985,6 +992,7 @@ export namespace Prisma {
     id?: boolean
     data?: boolean
     createdAt?: boolean
+    updatedAt?: boolean
   }, ExtArgs["result"]["data"]>
 
 
@@ -992,6 +1000,7 @@ export namespace Prisma {
     id?: boolean
     data?: boolean
     createdAt?: boolean
+    updatedAt?: boolean
   }
 
 
@@ -1002,6 +1011,7 @@ export namespace Prisma {
       id: string
       data: string
       createdAt: Date
+      updatedAt: Date
     }, ExtArgs["result"]["data"]>
     composites: {}
   }
@@ -1425,6 +1435,7 @@ export namespace Prisma {
     readonly id: FieldRef<"Data", 'String'>
     readonly data: FieldRef<"Data", 'String'>
     readonly createdAt: FieldRef<"Data", 'DateTime'>
+    readonly updatedAt: FieldRef<"Data", 'DateTime'>
   }
     
 
@@ -1732,7 +1743,8 @@ export namespace Prisma {
   export const DataScalarFieldEnum: {
     id: 'id',
     data: 'data',
-    createdAt: 'createdAt'
+    createdAt: 'createdAt',
+    updatedAt: 'updatedAt'
   };
 
   export type DataScalarFieldEnum = (typeof DataScalarFieldEnum)[keyof typeof DataScalarFieldEnum]
@@ -1811,12 +1823,14 @@ export namespace Prisma {
     id?: StringFilter<"Data"> | string
     data?: StringFilter<"Data"> | string
     createdAt?: DateTimeFilter<"Data"> | Date | string
+    updatedAt?: DateTimeFilter<"Data"> | Date | string
   }
 
   export type DataOrderByWithRelationInput = {
     id?: SortOrder
     data?: SortOrder
     createdAt?: SortOrder
+    updatedAt?: SortOrder
   }
 
   export type DataWhereUniqueInput = Prisma.AtLeast<{
@@ -1826,12 +1840,14 @@ export namespace Prisma {
     NOT?: DataWhereInput | DataWhereInput[]
     data?: StringFilter<"Data"> | string
     createdAt?: DateTimeFilter<"Data"> | Date | string
+    updatedAt?: DateTimeFilter<"Data"> | Date | string
   }, "id">
 
   export type DataOrderByWithAggregationInput = {
     id?: SortOrder
     data?: SortOrder
     createdAt?: SortOrder
+    updatedAt?: SortOrder
     _count?: DataCountOrderByAggregateInput
     _max?: DataMaxOrderByAggregateInput
     _min?: DataMinOrderByAggregateInput
@@ -1844,44 +1860,52 @@ export namespace Prisma {
     id?: StringWithAggregatesFilter<"Data"> | string
     data?: StringWithAggregatesFilter<"Data"> | string
     createdAt?: DateTimeWithAggregatesFilter<"Data"> | Date | string
+    updatedAt?: DateTimeWithAggregatesFilter<"Data"> | Date | string
   }
 
   export type DataCreateInput = {
     id?: string
     data: string
     createdAt?: Date | string
+    updatedAt?: Date | string
   }
 
   export type DataUncheckedCreateInput = {
     id?: string
     data: string
     createdAt?: Date | string
+    updatedAt?: Date | string
   }
 
   export type DataUpdateInput = {
     data?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
 
   export type DataUncheckedUpdateInput = {
     data?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
 
   export type DataCreateManyInput = {
     id?: string
     data: string
     createdAt?: Date | string
+    updatedAt?: Date | string
   }
 
   export type DataUpdateManyMutationInput = {
     data?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
 
   export type DataUncheckedUpdateManyInput = {
     data?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
 
   export type StringFilter<$PrismaModel = never> = {
@@ -1914,18 +1938,21 @@ export namespace Prisma {
     id?: SortOrder
     data?: SortOrder
     createdAt?: SortOrder
+    updatedAt?: SortOrder
   }
 
   export type DataMaxOrderByAggregateInput = {
     id?: SortOrder
     data?: SortOrder
     createdAt?: SortOrder
+    updatedAt?: SortOrder
   }
 
   export type DataMinOrderByAggregateInput = {
     id?: SortOrder
     data?: SortOrder
     createdAt?: SortOrder
+    updatedAt?: SortOrder
   }
 
   export type StringWithAggregatesFilter<$PrismaModel = never> = {

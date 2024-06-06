@@ -115,7 +115,8 @@ Prisma.NullTypes = {
 exports.Prisma.DataScalarFieldEnum = {
   id: 'id',
   data: 'data',
-  createdAt: 'createdAt'
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
 };
 
 exports.Prisma.SortOrder = {
