@@ -12,7 +12,7 @@ export default class requestrWebhookController {
 
     async create(value: RequestProps){
         let responseType: any = ''
-        
+       
         if(value.payload) {
             if(value.payload.response_type){
                 responseType = value.payload.response_type

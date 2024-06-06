@@ -9,7 +9,13 @@ class requestrWebhookController {
         this.requestWebhookModels = new request_models_1.default();
     }
     async create(value) {
-        const result = await this.requestWebhookModels.create(value);
+        let responseType = '';
+        if (value.payload) {
+            if (value.payload.response_type) {
+                responseType = value.payload.response_type;
+            }
+        }
+        const result = await this.requestWebhookModels.create(JSON.stringify(value), responseType);
         return result;
     }
 }

@@ -9,7 +9,7 @@ const response_controller_1 = require("./features/webhook/response/response.cont
 const router = express_1.default.Router();
 router.post('/request', async (req, res, next) => {
     const body = req.body;
-    const result = await new request_controller_1.default().create(JSON.stringify(body));
+    const result = await new request_controller_1.default().create(body);
     res.send(result);
     next();
 });
