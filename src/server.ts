@@ -19,8 +19,8 @@ app.use('/',router)
 
 const PORT = 8000
 
-const HOSTNAME = env.HOSTNAME
+//const HOSTNAME = env.HOSTNAME
 
-app.listen(PORT, HOSTNAME, () => {
-    console.log(`http://${HOSTNAME}:${PORT}`)
+app.listen(PORT, () => {
+    //console.log(`http://${HOSTNAME}:${PORT}`)
 })
