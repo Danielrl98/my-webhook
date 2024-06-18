@@ -12,8 +12,6 @@ app.use(express.json())
 
 app.use('/',router)
 
-console.log(env)
-
 const PORT = 8000
 
 app.listen(PORT, () => {
